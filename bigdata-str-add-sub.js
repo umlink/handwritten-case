@@ -1,6 +1,8 @@
 let a = "9007199254740991";
 let b = "1234567899999999999";
-
+/**
+ * 大数相加
+ * */
 const add = (a, b) => {
   const maxLen = Math.max(a.length, b.length)
   a = a.padStart(maxLen, 0)
@@ -17,6 +19,10 @@ const add = (a, b) => {
   }
   return sum
 }
+
+/**
+ * 大数相减
+ * */
 
 const sub = (a, b) => {
   const maxLen = Math.max(a.length, b.length)
@@ -37,6 +43,9 @@ const sub = (a, b) => {
 
 // console.log(sub(a, b))
 
+/**
+ * 大数相乘
+ * */
 const multiply = (a, b) => {
   const list = []
   let maxLen = 0
